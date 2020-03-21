@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import time
 from selenium import webdriver
-import yaml
+# import yaml
 
 # this is added to deploy onto heroku
 import os
