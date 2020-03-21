@@ -16,10 +16,13 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 # Now you can start using Selenium
 
+# use this to run locally
+# conf = yaml.load(open('./credentials.yml'))
+# username = conf['ntu']['userName']
+# pwd = conf['ntu']['password']
 
-conf = yaml.load(open('./credentials.yml'))
-username = conf['ntu']['userName']
-pwd = conf['ntu']['password']
+username = os.environ["userName"]
+pwd = os.environ["password"]
 
 url = "https://sso.wis.ntu.edu.sg/webexe88/owa/sso_login1.asp?t=1&p2=https://wis.ntu.edu.sg/pls/webexe/str_stud.BRANCH_STUD"
 
