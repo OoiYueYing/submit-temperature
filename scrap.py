@@ -31,7 +31,7 @@ soup = BeautifulSoup(page, 'html.parser')
 # print(soup)
 
 # google chrome session
-driver = webdriver.Chrome('../chromDriver/chromedriver.exe')
+# driver = webdriver.Chrome('../chromDriver/chromedriver.exe')
 driver.get(url)
 time.sleep(2)
 
